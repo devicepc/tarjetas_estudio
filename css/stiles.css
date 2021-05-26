@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Open+Sans&display=swap');
+
+
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    justify-content: center;
+    align-items: center;
+
+}
+header{
+    width: 100%;
+    background: #4e94ab;
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+}
+
+/* estilo de menu */
+
+#btn-menu{
+    display: none;
+}
+header label {
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    border-right: 1px, solid #fff;
+}
+header label:hover {
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.3);
+    height: 100%;
+
+}
+.menu ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    
+    
+}
+.menu li {
+    border-right: 1px, solid #FFF;
+}
+.menu li:hover{
+    background: rgba(0, 0,0, 0.3);
+}
+.menu li a {
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+
+}
+/* estilo cards1 */
+.container .face2 .TPreg{
+    margin-left: 10px;
+}
+
+.container.card .face{
+    width: 300px;
+    height: 200px;
+    transition: 0.5s;    
+}
+.container .face1{
+    position: relative;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    
+}
+.container .face1:hover{
+    background: #ff0057;
+    
+}
+.container .face1 .content{
+    opacity: 0.6;
+    transition: 0.5s;
+}
+.container .face1:hover .content{
+    opacity: 1;
+    
+}
+.container .face1 .content img{
+    max-width: 100px;
+    
+}
+.container .face1 .content h3{
+    margin: 10px 0 0;
+    padding: 0;
+    color: blanchedalmond;
+    text-align: center;
+    font-size: 1.5em;
+
+}
+.container .face2{
+    position: relative;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8); 
+    
+}
+
+.container .face2 p{
+    margin: 0;
+    padding: 0;
+    color: salmon ;
+
+}
+/* estilo cards */
+.container .card{
+    width: 330px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+
+}
+.container .card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.container .card h4{
+    font-weight: 600;
+}
+.container .card p{
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+}
+.container .card a {
+    font-weight: 500;
+    text-decoration: none;
+    color: #3498db;
+    margin: 15px;
+    display: inline-block;
+    padding: 5px;
+    border: 1px solid #6a6a6a;
+}
+.container .card a:hover {
+    color: black;
+    background: #3498db;
+}
+
+
+
+
+/* estilo de menu  responsive*/
+@media (max-width:768px){
+    header label {
+        display: block;
+
+    }
+    .menu {
+        position: absolute;
+        background: #4e4e4e;
+        width: 70%;
+        margin-left: -70%;
+        transition: all 0.5s;
+    }
+    .menu ul {
+        flex-direction: column;
+    }
+    .menu li {
+        border-top: 1px solid #fff;
+    }
+#btn-menu:checked ~ .menu{
+    margin: 0;
+}
+}
+
+/* estilos del main */
+main{
+    padding: 20px;
+}
+.div1{
+    display: inline-block;
+}
+h1{
+    text-align: center;
+    font-size: '40px';
+    color: #6a6a6a;
+    margin-top: 50px;
+}
+h4{
+    text-align: center;
+}
+
